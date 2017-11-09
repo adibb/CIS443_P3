@@ -3,9 +3,9 @@ __author__ = 'adibb'
 # Written by Alex Dibb
 # Last edited 11/8/2017
 # Debugging decorator for setclock, derived from A. Hornof's work
-# Seperated for future work, and for early declaration
+# Seperated for future work, and for early declaration via import
 
-# Log event without dismissal
+# Log event with (self, event) arguments
 def log_event(func):
     def log_wrapper(self, event):
         if __debug__:
